@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class Exercicio {
         <<abstract>>
@@ -43,3 +44,4 @@ classDiagram
     
     Aerobico <|-- Corrida
     Aerobico <|-- Natacao
+```
