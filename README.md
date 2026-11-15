@@ -1,7 +1,11 @@
-# Sistema de Academia
+# Sistema de Gestão de Treinos — Tema: Academia
 
-Membros da Equipe: Douglas Karan, Carlos Jefferson, Fernando Carvalho
+**Objetivo do sistema:** Gerenciar rotinas de treinos e calcular de forma polimórfica o gasto calórico e o detalhamento de exercícios aeróbicos, de musculação e de alongamento.
 
-Tendo como tema a Academia, esta Parte 1 exige a aplicação de herança e polimorfismo, assuntos da Aula 04, na modelagem do sistema. A equipe deverá projetar e implementar a hierarquia de classes, possibilitando que diferentes tipos de objetos respondam de formas específicas a uma única chamada de método.
+## Integrantes da Equipe
+- Douglas Karan
+- Carlos Jefferson
+- Fernando Carvalho
 
-link: [Diagramas](/docs)
+## Documentação e Modelagem
+- [Diagrama de Classes (Mermaid)](docs/diagrama.md)
