@@ -1,17 +1,34 @@
 ```mermaid
 classDiagram
     class Exercicio {
+        <<abstract>>
         +String nome
         +String grupo_muscular
-        +calcular_calorias(peso)
-        +descrever()
+        +calcular_calorias(peso)*
+        +descrever()*
         +__str__()
+    }
+
+    class Cronometravel {
+        <<interface>>
+        +iniciar()
+        +parar()
+        +tempo_decorrido()
+    }
+
+    class Progressivo {
+        <<interface>>
+        +evoluir()
     }
 
     class Aerobico {
         +int duracao
         +calcular_calorias(peso)
         +descrever()
+        +iniciar()
+        +parar()
+        +tempo_decorrido()
+        +evoluir()
         +__str__()
     }
 
@@ -19,6 +36,7 @@ classDiagram
         +float distancia
         +calcular_calorias(peso)
         +descrever()
+        +evoluir()
         +__str__()
     }
 
@@ -26,6 +44,7 @@ classDiagram
         +int piscinas
         +calcular_calorias(peso)
         +descrever()
+        +evoluir()
     }
 
     class Musculacao {
@@ -34,6 +53,7 @@ classDiagram
         +float carga
         +calcular_calorias(peso)
         +descrever()
+        +evoluir()
         +__str__()
     }
 
@@ -49,4 +69,8 @@ classDiagram
     Exercicio <|-- Alongamento
     Aerobico <|-- Corrida
     Aerobico <|-- Natacao
+
+    Cronometravel <|.. Aerobico
+    Progressivo <|.. Aerobico
+    Progressivo <|.. Musculacao
 ```
